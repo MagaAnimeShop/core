@@ -1,0 +1,12 @@
+com\ecomos\coreconfig\service\ImageService$1.class
+com\ecomos\coreconfig\entities\Image.class
+com\ecomos\coreconfig\CoreConfigApplication.class
+com\ecomos\coreconfig\entities\Image$ImageBuilder.class
+com\ecomos\coreconfig\controller\PropertyController.class
+com\ecomos\coreconfig\entities\BaseEntity.class
+com\ecomos\coreconfig\repository\ImageRepository.class
+com\ecomos\coreconfig\repository\PropertyRepository.class
+com\ecomos\coreconfig\service\ImageService.class
+com\ecomos\coreconfig\entities\Property.class
+com\ecomos\coreconfig\controller\FileUploadController.class
+com\ecomos\coreconfig\service\PropertyService.class
