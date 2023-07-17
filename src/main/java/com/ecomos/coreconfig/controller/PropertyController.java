@@ -1,17 +1,19 @@
 package com.ecomos.coreconfig.controller;
 
+import com.ecomos.coreconfig.entities.Image;
 import com.ecomos.coreconfig.entities.Property;
 import com.ecomos.coreconfig.repository.PropertyRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @RestController
 @RequestMapping("/api/properties")
+@Slf4j
 public class PropertyController {
 
     @Autowired
@@ -41,7 +43,6 @@ public class PropertyController {
     public Property updateProperty(@PathVariable String id, @RequestBody Property updatedProperty) {
         Optional<Property> property = propertyRepository.findById(id);
         if (property.isPresent()) {
-            updatedProperty.setId(id);
             return propertyRepository.save(updatedProperty);
         } else {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Property not found");
@@ -52,6 +53,5 @@ public class PropertyController {
     public void deleteProperty(@PathVariable String id) {
         propertyRepository.deleteById(id);
     }
-
 
 }

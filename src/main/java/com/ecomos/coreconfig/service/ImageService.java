@@ -30,7 +30,7 @@ public class ImageService {
     private ImageRepository imageRepository;
 
     public Image uploadFile(MultipartFile multipartFile) throws IOException {
-        String urlUpload = propertyRepository.findByKey("url.upload.file").getValue();
+        String urlUpload = propertyRepository.findByKey("n.upload.file").getValue();
         RestTemplate restTemplate = new RestTemplate();
 
         MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
