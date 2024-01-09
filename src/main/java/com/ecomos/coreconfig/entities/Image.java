@@ -14,5 +14,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Image extends BaseEntity {
 
     private String imageName;
+
     private String imageUrl;
+
+    private Integer sequence;
 }

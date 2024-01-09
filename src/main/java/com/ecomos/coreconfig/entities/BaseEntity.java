@@ -1,10 +1,7 @@
 package com.ecomos.coreconfig.entities;
 
 import lombok.*;
-import org.springframework.data.annotation.CreatedBy;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.annotation.*;
 
 import java.util.Date;
 
@@ -16,11 +13,15 @@ public class BaseEntity {
     @Id
     private String id;
 
+    private String tenantId;
+
+    @CreatedBy
     private String createBy;
 
     @CreatedDate
     private Date createStamp;
 
+    @LastModifiedBy
     private String updateBy;
 
     @LastModifiedDate

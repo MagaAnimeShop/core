@@ -34,10 +34,12 @@ public class PropertyController {
         return propertyRepository.findByKey(key);
     }
 
+
     @PostMapping
     public Property addProperty(@ModelAttribute Property property) {
         return propertyRepository.save(property);
     }
+
 
     @PutMapping("/{id}")
     public Property updateProperty(@PathVariable String id, @RequestBody Property updatedProperty) {
