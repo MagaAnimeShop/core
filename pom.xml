@@ -8,7 +8,7 @@
         <version>2.7.12</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>vcom.ecomos.coreconfig</groupId>
+    <groupId>vn.mega.coreconfig</groupId>
     <artifactId>coreconfig</artifactId>
     <version>0.0.1</version>
     <name>core-config</name>
@@ -175,7 +175,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <!-- Đường dẫn đến file applicationMain-->
-                    <mainClass>com.ecomos.coreconfig.CoreConfigApplication</mainClass>
+                    <mainClass>vn.mega.coreconfig.CoreConfigApplication</mainClass>
                     <layout>JAR</layout>
                     <includeSystemScope>true</includeSystemScope>
                 </configuration>
