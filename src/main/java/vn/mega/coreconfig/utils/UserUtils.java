@@ -9,4 +9,8 @@ public class UserUtils {
         return "admin";
     }
 
+    public static String getSelectedTenant() {
+        return "ADMIN";
+    }
+
 }
